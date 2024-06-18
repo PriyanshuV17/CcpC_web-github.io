@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Crafter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="CcpC.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container"><!--Whole section will be in row grid-->
+        <div class ="navbar"><!-- Fixed Navigation Bar all buttons on right side-->
+            <div class="navleft">
+                <h3> <div class="your-div">
+                    <object type="image/svg+xml" data="navlogo.svg">
+                    </object>
+                </div></h3>
+            </div>
+            <div class ="navright">
+                <!-- Desktop view navigation -->
+                <div class="nav-desktop">
+                    <a href="index.html">Home</a>
+                    <a href="events.html">Events</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="members.html">Members</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            <!-- Responsive view navigation -->
+                <div class="nav-responsive" id="myNav">
+                    <a href="index.html">Home</a>
+                    <a href="events.html">Events</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="members.html">Members</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="container" onclick="toggleNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="top-body"><!--section will be in column grid-->
+            <div class="Logo"><!--For Logo-->
+                <div class="your-div">
+                    <object type="image/svg+xml" data="logo.svg">
+                    </object>
+                </div>
+            </div>
+            <div class="Clubname"><!--For Name, hover on mouse pointer-->
+                <h2 class="text">
+                    <div class="your-div">
+                        <object type="image/svg+xml" data="name.svg">
+                        </object>
+                    </div>
+                </h2>
+                    <div id="output">
+                        <span id="word"></span>
+                    </div>
+            </div>
+        </div>
+        <div class="middle-body"><!--whole section will be in column grid-->
+            <div class="About-column"><!--left column About section-->
+                <h3>About</h3><br>
+                The Code Crafter Programming Club at CUJ helps students join the coding community and gain valuable skills and insights. We provide a supportive platform offering mentorship and assistance to enhance coding abilities, ensuring that every passionate CUJ student receives the necessary support to kickstart their journey. Recognizing that a strong beginning is crucial for future success, our mission is to empower students with the tools they need to thrive in the coding world.
+            </div>
+            <div class="Middle-column">
+                <div id="slideshow-container">
+                    <a href="blogs.html#010324"><div id="slideshow">
+                        <div class="slide-container">
+                            <img src="img/img1.jpg" class="slide" />
+                            <div class="overlay">GitHub Session</div>
+                        </div>
+                        <div class="slide-container">
+                            <img src="img/img2.jpg" class="slide" />
+                            <div class="overlay">GitHub Session</div>
+                        </div>                        
+                    </div></a>
+                </div>
+            </div>
+            <div class="Right-section"><!-- Right column for display for events-->
+                <h3>Events</h3><br>
+                <div id="embeddedContent"> </div>
+
+            </div>
+
+        </div>
+        <div class="lower-section"><!--Section for displaying founding members details and student body members/ all sub section will be column grid-->
+            <div class="image-section"><!--This section is for image of every founding member and studnet body combined and on clicking in each one picture thier profile details gets open in member page -->
+              
+
+            </div>
+            <div class="details-section"><!--This section is for about founding members details in short representation of code block-->
+                
+            </div>
+
+
+        </div>
+        
+        <footer>
+            <div class="social-connection"><!--Section for social media connect as column grid-->
+                <a href="https://www.linkedin.com/company/codecraftercuj/" target="_blank" class="social-link linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/ccpc_cuj/" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/CcpC-cuj" target="_blank" class="social-link github">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+            </div>
+            <div class="University"><!--Section for University connection as column grid -->
+                <a href="https://cuj.ac.in/" target="_blank">
+                <img src="cujlogo.png"></img> </a>
+            </div>
+            <div class="DCSE">
+                <a href="https://cuj.ac.in/DCSE/CS&Edepartment.php" target="_blank"> DCSE|CUJ </a>
+            </div>
+            <div class="copyright"><!--Copyright section at bottom as row grid-->
+                <p>&copy; 2024 CcpC - Central University of Jharkhand</p>
+            </div>
+            <div class="credit">
+            </div>Design & Developed by <a href="https://www.linkedin.com/in/krish-kumar-82a21b256" target="_blank">Krish Kumar</a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            function toggleNav() {
+        var nav = document.getElementById("myNav");
+        var bars = document.querySelector('.container');
+        
+        // Toggle navigation visibility
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+            bars.classList.remove("change");
+        } else {
+            nav.style.display = "block";
+            bars.classList.add("change");
+        }
+    }
+    
+    // Reset navigation when a link is clicked
+    document.addEventListener('click', function(event) {
+        var nav = document.getElementById("myNav");
+        var bars = document.querySelector('.container');
+    
+        // Check if the clicked element is a link within the navigation
+        if (event.target.tagName.toLowerCase() === 'a' && nav.contains(event.target)) {
+            nav.style.display = "none";
+            bars.classList.remove("change");
+        }
+    });
+        </script>
+</body>
+</html>
