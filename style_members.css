@@ -1,0 +1,327 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(to bottom, #ffc6c6 ,#082062);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.Container {
+    display: grid;
+    grid-template-rows: auto 2fr 1fr auto;
+    height: 100vh;
+}
+.navbar {
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background:linear-gradient(to bottom, #ffc6c6 ,#f7c0c0 ,#f7bfbf ,#e1b7b718);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navleft {
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+}
+.navright {
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+    border-radius: 5%;
+}
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow:0 0 15px rgb(10, 10, 10);
+}
+.top-body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background-color: #f1f1f100;
+    margin-top: 50px;
+}
+.Logo {
+  display: flex;
+  justify-content: center;
+}
+.top-body-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.c1{
+  display: flex;
+  justify-content: center;
+}
+.c2{
+  display: flex;
+  justify-content: center;
+}
+
+.middle-body {
+  display: grid;
+  grid-template-rows:1fr ;
+  height: 100%;
+}
+
+.default-content {
+    padding: 20px;
+    border: 1px solid #ffffff00;
+    background-color: #ffffff00;
+    border-radius: 15px;
+    max-width: 100%; /* Adjust width as needed */
+    margin: auto;
+}
+.default-content1 {
+  padding: 0;
+  border:0px solid #ccc;
+  background-color: #ffffff00;
+  border-radius: 15px;
+  max-width: 100%; /* Adjust width as needed */
+  margin: auto;
+}
+.default-content2 {
+  padding: 40px;
+  border: 1px solid #ccc;
+  background-color: #ffffff00;
+  border-radius: 15px;
+  font-size: 20px;
+   /* Adjust width as needed */
+ 
+}
+.ftitle
+{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.transparent-button.active-button h1 {
+  color: white; /* Change the color to white */
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Add a black shadow */
+}
+
+
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Member styles */
+.members-list {
+  margin-top: 50px;
+  display: none;
+}
+
+.members-list.active {
+  display: block;
+}
+
+.member-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.member {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.member:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  color: #fffffff4;
+  background-color: #00233473;
+}
+.custom-link {
+  text-decoration: none; /* Remove underline */
+  color: #000000; /* Change font color to red */
+  /* Additional styles for the link */
+}
+/* Alumni styles */
+.alumni-row {
+  display: none;
+}
+
+.alumni-row.active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.alumni {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #33333300;
+  color: white;
+  
+}
+
+.social-connection {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+  height: 50px;
+    margin: 0 10px;
+    color: #d2edfc; /* You can style the color of the icons here */
+    font-size: 24px; /* Adjust the size of the icons as needed */
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+
+    transform: scale(1.5);
+}
+/* Style for LinkedIn icon */
+.linkedin:hover {
+color: #0077b5; /* Change to LinkedIn color on hover */
+}
+
+/* Style for Instagram icon */
+.instagram:hover {
+color: #bc2a8d; /* Change to Instagram color on hover */
+}
+
+/* Style for GitHub icon */
+.github:hover {
+color: #000000; /* Change to GitHub color on hover */
+}
+.social-connection img {
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  
+}
+
+.University {
+  display: flex;
+  justify-content: center;
+}
+
+
+.University img {
+  /* width: 100px; */
+  height: 40px;
+}
+
+.University p {
+  margin-left: 10px;
+}
+
+.University a {
+  color: white;
+  text-decoration: none;
+}
+
+.University a:hover {
+  color: yellow;
+}
+.DCSE  a {
+  display: flex;
+  justify-content: center;
+  color: white; /* Default color for the link */
+  text-decoration: none; /* Remove underline */
+}
+.copyright {
+  display: flex;
+  justify-content: right;
+  color: antiquewhite;
+  margin-top: 10px;
+  padding-right: 5px;
+}
+.copyright p {
+  font-size: 12px; /* Adjust the font size as needed */
+}
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    html,
+    body {
+      background-size: cover;
+    }
+       .navbar {
+      justify-content: center; /* Center align links on smaller screens */
+      background-color: #0c000000; /* Darken background color */
+  }
+  
+  .navbar a {
+      margin: 0 10px; /* Adjust margin for smaller screens */
+  }
+    /* Change the grid layout for smaller screens */
+    .top-body {
+      grid-template-columns: 1fr;
+    }
+  
+    .middle-body {
+      grid-template-columns: 1fr;
+    }
+  
+    .lower-section {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Reduce the font size for smaller screens */
+    .Clubname {
+      font-size: 24px;
+    }
+  
+    .details-section pre {
+      font-size: 12px;
+    }
+    footer{
+        display: fixed;
+        bottom: 0;
+        top:0;
+    }
+  }
+  
+  
