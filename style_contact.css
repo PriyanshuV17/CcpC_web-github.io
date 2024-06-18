@@ -1,0 +1,253 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    /* Gradient background color */
+    background: linear-gradient(to bottom, #ffc6c6 ,#082062);
+    /* Ensure the gradient covers the entire viewport */
+    height:100%;
+    margin:0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     /* Optional: Cover the entire viewport with the gradient */
+    /* Optonal: Center content vertically and horizontally */
+  }
+  
+  /* Container styles */
+  .Container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background:linear-gradient(to bottom, #ffc6c6 ,#f7c0c0 ,#f7bfbf ,#e1b7b718);
+    padding: 10px;
+    position: fixed; /* Make the navbar fixed */
+    top: 0;
+    width: 100%;
+  }
+  .navleft{
+    display: flex;
+    justify-content:left;
+    padding-left: 20px;
+  }
+  .navright{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  .navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+    border-radius: 5%; /* Add border radius to the links */
+  }
+  
+  .navbar a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow:0 0 15px rgb(10, 10, 10);
+  }
+  
+  /* Top-body styles */
+  .top-body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #f1f1f100;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px; /* Add a top margin to avoid navbar overlay */
+  }
+  
+  .Logo {
+    display: flex;
+    justify-content: center;
+  }
+  .name{
+    display: flex;
+    justify-content: center;
+  }
+  .middlebody{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background-color: #f1f1f100;
+    margin-top: 20px; /* Add a top margin to avoid navbar overlay */
+  }
+  .middle-2{
+    display: grid;
+    align-content: space-between;
+    justify-content: center
+
+
+
+
+
+
+  }
+  
+  .contact-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contact-details-row {
+    width: calc(100% - 0px);
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .contact-details-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(100% - 30px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin:20px
+  }
+  
+  .contact-details-box h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .phone-number {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  /* Footer styles */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #33333300;
+    color: white;
+    
+  }
+  
+  .social-connection {
+      display: flex;
+      justify-content: center;
+      
+  }
+  
+  .social-link {
+      display: inline-block;
+      width: 50px;
+    height: 50px;
+      margin: 0 10px;
+      color: #d2edfc; /* You can style the color of the icons here */
+      font-size: 24px; /* Adjust the size of the icons as needed */
+      transition: transform 0.3s ease;
+  }
+  
+  .social-link:hover {
+  
+      transform: scale(1.5);
+  }
+  /* Style for LinkedIn icon */
+  .linkedin:hover {
+  color: #0077b5; /* Change to LinkedIn color on hover */
+  }
+  
+  /* Style for Instagram icon */
+  .instagram:hover {
+  color: #bc2a8d; /* Change to Instagram color on hover */
+  }
+  
+  /* Style for GitHub icon */
+  .github:hover {
+  color: #000000; /* Change to GitHub color on hover */
+  }
+  .social-connection img {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    
+  }
+  
+  .University {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .University img {
+    /* width: 100px; */
+    height: 40px;
+  }
+  
+  .University p {
+    margin-left: 10px;
+  }
+  
+  .University a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .University a:hover {
+    color: yellow;
+  }
+  .DCSE  a {
+    display: flex;
+    justify-content: center;
+    color: white; /* Default color for the link */
+    text-decoration: none; /* Remove underline */
+  }
+  .copyright {
+    display: flex;
+    justify-content: right;
+    color: antiquewhite;
+    margin-top: 10px;
+    padding-right: 5px;
+  }
+  .copyright p {
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      html,
+      body {
+        background-size: cover;
+      }
+         .navbar {
+        justify-content: center; /* Center align links on smaller screens */
+        background-color: #0c000000; /* Darken background color */
+    }
+    
+    .navbar a {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+      /* Change the grid layout for smaller screens */
+      .top-body {
+        grid-template-columns: 1fr;
+      }
+    
+      .middle-body {
+        grid-template-columns: 1fr;
+      }
+    
+      .lower-section {
+        grid-template-columns: 1fr;
+      }
+    
+    
+      
+    }
+    
+    
