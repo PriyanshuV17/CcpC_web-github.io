@@ -1,0 +1,343 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    /* Gradient background color */
+    background: linear-gradient(to bottom, #ffc6c6 ,#082062);
+    /* Ensure the gradient covers the entire viewport */
+    height:100%;
+    margin:0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     /* Optional: Cover the entire viewport with the gradient */
+    /* Optonal: Center content vertically and horizontally */
+  }
+  
+  /* Container styles */
+  .Container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background:linear-gradient(to bottom, #ffc6c6 ,#f7c0c0 ,#f7bfbf ,#e1b7b718);
+    padding: 10px;
+    position: fixed; /* Make the navbar fixed */
+    top: 0;
+    width: 100%;
+  }
+  .navleft{
+    display: flex;
+    justify-content:left;
+    padding-left: 20px;
+  }
+  .navright{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  .navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+    border-radius: 5%; /* Add border radius to the links */
+  }
+  
+  .navbar a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow:0 0 15px rgb(10, 10, 10);
+  }
+  
+  /* Top-body styles */
+  .top-body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #f1f1f100;
+    margin-top: 50px; /* Add a top margin to avoid navbar overlay */
+  }
+  
+  .Logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .name{
+    display: flex;
+    justify-content: center;
+  }
+
+.text{
+  display: flex;
+  justify-content: center;
+}
+  
+  /* Middle-body styles */
+  .middle-body {
+    display: grid;
+    grid-template-columns: 1.3fr 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  
+  
+  .About-column {
+  font-size: 18px;
+  background-color: rgba(102, 189, 232, 0); /* 40% transparent gray color */
+  padding: 20px;
+  border: #000000 0px solid;
+  border-radius: 25px;
+  transition: background-color 1s ease;
+  }
+  
+  .About-column:hover {
+  background-color: rgba(149, 182, 201, 0); /* Red color on hover */
+  }
+  
+  .Middle-column {
+    font-size: 18px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: #f1f1f100;
+    padding: 20px;
+    margin-left : 20px;
+  }
+
+/* .containt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left : 20px;
+  margin-right : 20px;
+  margin-top : 20px;
+  margin-bottom : 20px;
+  background-color: #935d5d34;
+  border-radius: 25px;
+  border: #000000 0.1px solid;
+  transition: background-color 1s ease;
+  
+} */
+#link{
+  color: white; /* Default color for the link */
+  text-decoration: none;
+
+}
+
+
+
+
+  .Right-section {
+    background-color: #f1f1f100;
+    padding: 20px;
+  }
+  
+  /* Lower-section styles */
+  .lower-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-section img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+rect {
+  fill-opacity: 1; /* Sets the opacity of the fill */
+  stroke: rgba(255, 0, 0, 0); /* Sets the color of the stroke (border) */
+  stroke-width: 2; /* Sets the width of the stroke */
+}
+
+/* Hover effect */
+rect:hover {
+  fill-opacity: 1; /* Increase opacity on hover */
+  transform: scale(1.01); /* Increase stroke width on hover */
+}
+
+  .details-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .details-section pre {
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  /* Footer styles */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #33333300;
+    color: white;
+    
+  }
+  
+  .social-connection {
+      display: flex;
+      justify-content: center;
+      
+  }
+  
+  .social-link {
+      display: inline-block;
+      width: 50px;
+    height: 50px;
+      margin: 0 10px;
+      color: #d2edfc; /* You can style the color of the icons here */
+      font-size: 24px; /* Adjust the size of the icons as needed */
+      transition: transform 0.3s ease;
+  }
+  
+  .social-link:hover {
+  
+      transform: scale(1.5);
+  }
+  /* Style for LinkedIn icon */
+  .linkedin:hover {
+  color: #0077b5; /* Change to LinkedIn color on hover */
+  }
+  
+  /* Style for Instagram icon */
+  .instagram:hover {
+  color: #bc2a8d; /* Change to Instagram color on hover */
+  }
+  
+  /* Style for GitHub icon */
+  .github:hover {
+  color: #000000; /* Change to GitHub color on hover */
+  }
+  .social-connection img {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    
+  }
+  
+  .University {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .University img {
+    /* width: 100px; */
+    height: 40px;
+  }
+  
+  .University p {
+    margin-left: 10px;
+  }
+  
+  .University a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .University a:hover {
+    color: yellow;
+  }
+  .DCSE  a {
+    color: white; /* Default color for the link */
+    text-decoration: none; /* Remove underline */
+  }
+  .copyright {
+    display: flex;
+    justify-content: right;
+    color: antiquewhite;
+    margin-top: 10px;
+    padding-right: 5px;
+  }
+  .copyright p {
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+  #output {
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: left; /* Align the text to the left */
+  }
+  
+  #word {
+    color: rgb(255, 255, 255); /* Change the color here */
+  }
+  
+  .blink {
+    animation: blink-animation 0.2s infinite;
+  }
+  
+  @keyframes blink-animation {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    html,
+    body {
+      background-size: cover;
+    }
+       .navbar {
+      justify-content: center; /* Center align links on smaller screens */
+      background-color: #0c000000; /* Darken background color */
+  }
+  
+  .navbar a {
+      margin: 0 10px; /* Adjust margin for smaller screens */
+  }
+    /* Change the grid layout for smaller screens */
+    .top-body {
+      grid-template-columns: 1fr;
+    }
+  
+    .middle-body {
+      grid-template-columns: 1fr;
+    }
+  
+    .lower-section {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Reduce the font size for smaller screens */
+    .Clubname {
+      font-size: 24px;
+    }
+  
+    .details-section pre {
+      font-size: 12px;
+    }
+    
+  }
+  
+  
